@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to the internet palindrome service</h1>
+    <p>Use the form below to submit a potential palindrome for checking:</p>
+    <form action='/is_palindrome' method='POST'>
+        String to check: <input type='text' name='palindrome_input'><br>
+        <input type='submit'>
+    </form>
+    <p>({{session['number_of_checks']}} potential palindromes have been checked)</p>
+</body>
+</html>
